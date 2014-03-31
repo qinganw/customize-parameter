@@ -1,0 +1,1 @@
+A Jenkins parameter plugin that deponds on Dynamic Parameters which allows for two select elements. The second select populates values depending upon the selection made for the first select, and display "PARAMONEOne" and "PARAMONETwo" based on "PARAMONE" option.

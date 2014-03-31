@@ -1,0 +1,27 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+
+  <!--
+    Creates a text field that shows the value of the "name" property.
+    When submitted, it will be passed to the corresponding constructor parameter.
+  -->
+  <f:entry title="Name" field="name" description="The name of the parameter set by the first select box">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Description" field="description" description="Description of this parameter's use">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Options" field="valueOptions" description="List options, one per line available for the first parameter">
+    <f:textarea />
+  </f:entry>
+  <f:entry title="Name" field="secondName" description="The name of the parameter set by the second select box">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Options" field="dynamicValueOptions" description="List options, one per line available for the second parameter, prefix with the value of the first parameter and a colon to determine which should show for each possible first parameter value">
+    <f:textarea />
+  </f:entry>
+</j:jelly>

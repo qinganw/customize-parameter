@@ -1,0 +1,24 @@
+<?jelly escape-by-default='true'?>
+<j:jelly 
+	xmlns:j="jelly:core" 
+	xmlns:st="jelly:stapler" 
+	xmlns:d="jelly:define"
+	xmlns:l="/lib/layout" 
+	xmlns:t="/lib/hudson" 
+	xmlns:f="/lib/form"
+	xmlns:i="jelly:fmt" 
+	xmlns:p="/lib/hudson/project">
+	
+<j:set var="instance" value="${it}" />
+<j:set var="descriptor" value="${it.descriptor}" />
+<f:entry title="${it.name}" field="value" description="${it.description}">
+      <input type="hidden" name="name" value="${it.name}" />
+      <f:select id="value" tooltip="${it.tips1}" />
+</f:entry>
+
+<f:entry title="${it.secondName}" field="dynamicValue" description="${it.description}">
+      <input type="hidden" name="secondName" value="${it.secondName}" />
+      <f:select id="dynamicValue" tooltip="${it.tips2}" />
+</f:entry>
+
+</j:jelly>

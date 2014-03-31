@@ -1,0 +1,24 @@
+.parameters .setting-main select{
+	width: 40%;
+}
+
+.setting-main .setting-input{
+	width: 39.5%;
+}
+
+.parameters .setting-main{
+	padding-left: 20px;
+}
+
+.parameters .setting-main img{
+	width: 20px;
+	height: 20px;
+	padding-left: 5px;
+	margin-top: -4px;
+}
+
+#main-panel .behavior-loading{
+	top:0;
+	position:fixed;
+	line-height:500px;
+}
